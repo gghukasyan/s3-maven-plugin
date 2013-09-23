@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.garegin</groupId>
+    <artifactId>s3-maven-plugin</artifactId>
+    <version>1.0</version>
+	<packaging>maven-plugin</packaging>
+
+	<name>S3 Maven Plugin</name>
+
+	<properties>
+		<aws.s3.key>AKIAJVUMQEM2KQ4IGM3A</aws.s3.key>
+		<aws.s3.secret>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</aws.s3.secret>
+		<aws.s3.bucket>betboost-dev</aws.s3.bucket>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-plugin-api</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.maven.plugin-tools</groupId>
+			<artifactId>maven-plugin-annotations</artifactId>
+			<version>3.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk</artifactId>
+			<version>1.5.6</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.codehaus.plexus</groupId>
+			<artifactId>plexus-utils</artifactId>
+			<version>3.0.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-core</artifactId>
+			<version>3.0.4</version>
+		</dependency>
+
+	</dependencies>
+
+</project>
